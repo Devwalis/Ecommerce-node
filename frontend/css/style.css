@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#auth-section {
+    margin: 20px; /* Espaçamento em torno da seção de autenticação */
+}
+
+form {
+    margin-bottom: 20px; /* Espaçamento entre formulários */
+}
+
+input {
+    display: block; /* Cada input ocupa uma linha */
+    margin: 10px 0; /* Espaçamento vertical entre os inputs */
+    padding: 10px; /* Espaçamento interno nos inputs */
+    width: 100%; /* Largura total do formulário */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}

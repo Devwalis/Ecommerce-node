@@ -6,7 +6,7 @@ dotenv.config();
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'root',
     database: 'nodeecommerce',
     waitForConnections: true,
     connectionLimit: 10,

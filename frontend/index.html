@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueTech Ecommerce</title>
-    <link rel="icon" href="img/BlueTechLogo.png">
-    <link rel="stylesheet" href="style.css">
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <img src="img/BlueTechLogo.png" alt="BlueTech Logo">
-            </div>
-        </div>
-    </header>
-
+    <div id="auth-buttons">
+        <button id="login-btn">Login</button>
+        <button id="signup-btn">Cadastrar</button>
+    </div>
     
+    <div id="auth-section" style="display:none;">
+        <!-- Área de Login e Cadastro -->
+        <form id="login-form" style="display:none;">
+            <h3>Login</h3>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Senha" required>
+            <button type="submit">Login</button>
+            <button type="button" id="close-login">Fechar</button> <!-- Botão para fechar o formulário -->
+        </form>
+
+        <form id="signup-form" style="display:none;">
+            <h3>Cadastro</h3>
+            <input type="text" id="signup-name" placeholder="Nome" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+            <button type="button" id="close-signup">Fechar</button> <!-- Botão para fechar o formulário -->
+        </form>
+    </div>
+
+    <h1>Lista de Produtos</h1>
+    <div id="product-list"></div>
+
+    <h2>Carrinho de Compras</h2>
+    <div id="cart">
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: R$ 0.00</p>
+        <button id="checkout-btn">Finalizar Compra</button>
+    </div>
+
+    <script src="./js/cart.js"></script>
+    <script src="./js/auth.js"></script> <!-- Script de autenticação -->
+    <script src="./js/app.js"></script>
 </body>
 </html>
